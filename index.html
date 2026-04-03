@@ -1,113 +1,73 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aryasatya | Narrative Portfolio</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    
-    <!-- FONT AWESOME (ICON) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <link rel="stylesheet" href="style.css">
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <title>Web Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <div class="cursor-follower"></div>
-    <canvas id="particleCanvas"></canvas>
+<header>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Here you will find detailed information about my skills, experience, and projects.</p>
+</header>
 
-    <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
+<section id="introduction">
+    <h2>Introduction</h2>
+    <p>Welcome! I am [Your Name], a passionate [Your Job Title]. Here to showcase my work and skills.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>Skill 1</li>
+        <li>Skill 2</li>
+        <li>Skill 3</li>
+        <li>Skill 4</li>
+    </ul>
+</section>
+
+<section id="experience">
+    <h2>Experience Timeline</h2>
+    <p>From [Start Date] to [End Date]: [Description of a relevant experience]</p>
+    <p>From [Start Date] to [End Date]: [Description of another experience]</p>
+</section>
+
+<section id="projects">
+    <h2>Projects Showcase</h2>
+    <div>
+        <h3>Project 1</h3>
+        <p>Description of Project 1.</p>
     </div>
+    <div>
+        <h3>Project 2</h3>
+        <p>Description of Project 2.</p>
+    </div>
+</section>
 
-    <main id="main-container">
-        <section class="scene" id="scene-1">
-            <div class="content">
-                <p class="sub-text">01. Prologue</p>
-                <h1 class="hero-text">Membangun dunia melalui baris kode dan ritme.</h1>
-                <p class="scroll-hint">Scroll untuk melihat narasi</p>
-            </div>
-        </section>
+<section id="statistics">
+    <h2>Statistics</h2>
+    <p>[Provide relevant statistics about your work that showcase your achievements]</p>
+</section>
 
-        <section class="scene" id="scene-2">
-            <div class="content profile-box">
-                <p class="sub-text">02. The Architect</p>
-                <h2 class="name-display">Aryasatya <span class="accent">N. Utama</span></h2>
-                <div class="bio-grid">
-                    <div class="bio-item">
-                        <span class="label">Identitas</span>
-                        <p>Dikenal sebagai <strong>Arya</strong>. Lahir di Bogor pada senja 22 Oktober 2010.</p>
-                    </div>
-                    <div class="bio-item">
-                        <span class="label">Dunia</span>
-                        <p>Menjelajahi logika dalam <strong>Programming</strong>, strategi dalam <strong>Gaming</strong>, dan harmoni dalam <strong>Musik</strong>.</p>
-                    </div>
-                </div>
-                <p class="quote">"Menerjemahkan algoritma menjadi estetika, seperti melodi yang tersusun rapi."</p>
-            </div>
-        </section>
+<section id="testimonials">
+    <h2>Testimonials</h2>
+    <blockquote>
+        <p>"Testimonial from a colleague or client about your work."
+        </p>
+        <footer>- [Name]</footer>
+    </blockquote>
+</section>
 
-        <section class="scene" id="scene-3">
-            <div class="content">
-                <p class="sub-text">03. Artifacts</p>
-                <h2 class="section-title">Eksplorasi Digital</h2>
-                <div class="project-grid">
-                    <div class="project-item">
-                        <div class="image-placeholder">CODING LOGIC</div>
-                        <h3>Algorithm Project</h3>
-                        <p>Eksperimen pemrograman dengan struktur yang presisi.</p>
-                    </div>
-                    <div class="project-item">
-                        <div class="image-placeholder">UI DESIGN</div>
-                        <h3>Vibe Aesthetic</h3>
-                        <p>Desain interface yang terinspirasi dari harmoni visual.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<section id="call-to-action">
+    <h2>Call to Action</h2>
+    <p>If you’d like to work together, please <a href="contact.html">contact me</a>.</p>
+</section>
 
-        <section class="scene" id="scene-4">
-            <div class="content">
-                <p class="sub-text">04. Mastery</p>
-                <h2>Tech & Beats</h2>
+<footer>
+    <p>&copy; 2026 [Your Name]. All rights reserved.</p>
+</footer>
 
-                <div class="skills-icons">
-                    <div class="skill-card">
-                        <i class="fa-brands fa-python"></i>
-                        <span>Python</span>
-                    </div>
-
-                    <div class="skill-card">
-                        <i class="fa-solid fa-code"></i>
-                        <span>Web Dev</span>
-                    </div>
-
-                    <div class="skill-card">
-                        <i class="fa-solid fa-brain"></i>
-                        <span>Logic</span>
-                    </div>
-
-                    <div class="skill-card">
-                        <i class="fa-solid fa-lightbulb"></i>
-                        <span>Creative Driven</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="scene" id="scene-5">
-            <div class="content">
-                <h2 class="hero-text">Mari berkolaborasi menciptakan harmoni baru.</h2>
-                <a href="https://www.instagram.com/onceuponaphamz/" class="cta-button" target="_blank">Sapa Arya di Sini</a>
-            </div>
-        </section>
-    </main>
-
-    <script src="script.js"></script>
 </body>
 </html>
